@@ -60,7 +60,7 @@ a {
 .link-arrow {
 
     text-transform: uppercase;
-    color: var(--color--primary);
+    color: var(--color--headings);
     font-size: 2rem;
     font-weight: bold;
 }
@@ -119,7 +119,7 @@ a {
 .list--tick {
     list-style-image: url(../images/tick.svg);
     padding-left: 3rem;
-    color: #a3543d;
+    color:var(--color--headings);
 }  
 
 .list--tick .list__item {
@@ -139,7 +139,7 @@ a {
 }
 
 .icon--primary {
-    fill: var(--color--primary);
+    fill: var(--color--headings);
 }
 
 .icon-container {
@@ -151,4 +151,34 @@ a {
     justify-content: center;
     align-items: center;
 
+}
+
+.container {
+    width: 1200px;
+    
+}
+
+.media {
+    display: flex;
+}
+
+.media__title {
+    margin-top: 0;
+    margin-left: 2rem;
+}
+
+.media__body {
+    margin: 0 2rem;
+}
+
+.media >.icon {
+    padding: 1rem;
+}
+
+.media >.badge {
+    margin: 0 2rem;
+    padding-top: 0.5rem;
+    height: 20px;
+    align-self: center;
+    justify-content: center;
 }

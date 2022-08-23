@@ -15,10 +15,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
-    <span class="icon-container">
-      <svg class="icon">
-        <use xlink:href="images/sprite.svg#wordpress"></use>
-      </svg>
-    </span>
+    <div class="container">
+      <header class="media">
+        <svg class="icon icon--primary">
+          <use xlink:href="images/sprite.svg#wordpress"></use>
+        </svg>
+        <h2 class="media__title">Menu</h2>
+        <span class="badge badge--primary badge--small">10% off today</span>
+      </header>
+      <div class="media__body">
+        <ul class="list list--tick">
+          <li class="list__item">Fish and Chips for $6</li>
+          <li class="list__item">Chinese hot pot for $88</li>
+          <li class="list__item">Hamburger with cheese and beef for $1</li>
+          <li class="list__item">Spaghetti with tomato for $10</li>
+        </ul>
+        <a href="#" class="link-arrow">Order Now</a>
+      </div>
+    </div>
   </body>
 </html>
