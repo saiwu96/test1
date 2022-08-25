@@ -83,7 +83,9 @@ a {
     font-weight: bold;
     padding: 0.5rem 2rem;
     white-space: nowrap;
+    text-transform: uppercase;
 }
+
 
 .badge--primary {
     background:var(--color--primary);
@@ -174,8 +176,8 @@ a {
 }
 
 .container {
-    width: 1200px;
-    
+    width: 1140px;
+    margin: 0 auto;
 }
 
 /* buttons */
@@ -185,7 +187,7 @@ a {
     cursor: pointer;
     font-size: 2rem;
     font-weight: 600;
-    padding: 2rem 4rem;
+    padding: 2rem 4vw;
     text-transform: uppercase;
     text-align: center;
     margin: 1rem 0;
@@ -242,11 +244,15 @@ a {
     }
 }
 
+
 .input-group {
     border: 1px solid var(--color--border);
     box-shadow: 0 0 30px 0 var(--color--border);
     border-radius: var(--border--radius);
     display: flex;
+    margin: 4rem auto;
+    max-width: 50%;
+    
 }
 
 .input-group .btn {
@@ -256,6 +262,7 @@ a {
 .input-group .input {
     border: 0;
     flex-grow: 1;
+    width: 0;
 }
 
 /* cards */
@@ -277,6 +284,16 @@ a {
 }
 
 /* plan */
+.plan {
+    padding: 4rem;
+
+}
+
+.plans {
+    width: 100%;
+}
+
+
 .plan__name {
     color: #fff;
     margin: 0;
@@ -289,8 +306,19 @@ a {
 }
 
 .plan__description {
+    display: inline-block;
     font-size: 2rem;
     font-weight: 300;
+}
+
+@media screen and (min-width:768px) {
+    .plans {
+        width: 1140px;
+    }
+    .plans .grid--1x2 {
+        grid-template-columns: 50% 50%;
+        padding: 2rem;
+    }
 }
 
 /* media */
@@ -361,7 +389,6 @@ a {
 /* grids */
 .grid {
     display: grid;
-
 }
 
 @media screen and (min-width:768px){
@@ -395,11 +422,12 @@ a {
 
 /* callout */
 .callout {
-    background: var(--color--body);
+    background: var(--color--lightsecondary);
     color: #fff;
     border-radius: 7px;
     padding: 4rem;
     display: grid;
+    margin-top: 5rem;
 }
 
 .callout .btn {
@@ -407,6 +435,9 @@ a {
     align-self: center;
 }
 
+.callout__heading{
+    color: var(--color--primary);
+}
 .callout__heading, 
 .callout__body{
     text-align: center;
