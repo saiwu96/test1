@@ -8,8 +8,11 @@ html {
     --color--secondary:#ce7d5d;
     --color--lightsecondary:#f7d1ba;
 }
+*, *::after, *::before {
+    box-sizing: border-box;
+}
 
-
+/* Typography */
 body {
     font-family:'Raleway', Arial, Helvetica, sans-serif;
     color: var(--color--body);
@@ -53,6 +56,7 @@ p {
     }
 }
 
+/* links */
 a {
     text-decoration: none;
 }
@@ -69,6 +73,8 @@ a {
     color: var(--color--secondary);
 }
 
+
+/* badges */
 .badge {
     border-radius: 20px;
     font-size: 2rem;
@@ -105,6 +111,8 @@ a {
     }
 }
 
+
+/* lists */
 .list {
     color: var(--color--headings);
     list-style: none;
@@ -133,6 +141,7 @@ a {
     }
 }
 
+/* icon */
 .icon {
     width: 40px;
     height: 40px;
@@ -158,27 +167,46 @@ a {
     
 }
 
-.media {
-    display: flex;
+/* buttons */
+.btn {
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 2rem 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1rem 0;
 }
 
-.media__title {
-    margin-top: 0;
-    margin-left: 2rem;
+.btn--outline {
+    border: 2px solid var(--color--headings);
+    color: var(--color--headings);
+    background: #fff;
 }
 
-.media__body {
-    margin: 0 2rem;
+.btn--outline:hover {
+    background: var(--color--headings);
+    color: #fff;
+}
+ 
+.btn--primary {
+    background: var(--color--primary);
+    color: #fff;
 }
 
-.media >.icon {
-    padding: 1rem;
+.btn--primary:hover {
+    background: var(--color--secondary);
 }
 
-.media >.badge {
-    margin: 0 2rem;
-    padding-top: 0.5rem;
-    height: 20px;
-    align-self: center;
-    justify-content: center;
+.btn--block {
+   width: 100%; 
+   display: inline-block;
+}
+
+@media screen and (min-width:1024px) {
+    .btn {
+        font-size: 1.5rem;
+    }
 }
