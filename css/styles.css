@@ -7,6 +7,8 @@ html {
     --color--primary:#a3543d;
     --color--secondary:#ce7d5d;
     --color--lightsecondary:#f7d1ba;
+    --color--border:#ccc;
+    --border--radius:30px;
 }
 *, *::after, *::before {
     box-sizing: border-box;
@@ -209,4 +211,40 @@ a {
     .btn {
         font-size: 1.5rem;
     }
+}
+
+/* inputs */
+.input {
+    border-radius: var(--border--radius);
+    border: 1px solid var(--color--border);
+    font-size: 2rem;
+    outline: 0;
+    padding: 2rem 4rem;
+    color: var(--color--headings);
+}
+
+::placeholder {
+    color: var(--color--border);
+}
+
+@media screen and (min-width:1024px) {
+    .input {
+        font-size: 1.5rem;
+    }
+}
+
+.input-group {
+    border: 1px solid var(--color--border);
+    box-shadow: 0 0 30px 0 var(--color--border);
+    border-radius: var(--border--radius);
+    display: flex;
+}
+
+.input-group .btn {
+    margin: 4px;
+}
+
+.input-group .input {
+    border: 0;
+    flex-grow: 1;
 }
