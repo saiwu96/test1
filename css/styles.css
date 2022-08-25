@@ -392,3 +392,38 @@ a {
     top:20px;
     right: -32px;
 }
+
+/* callout */
+.callout {
+    background: var(--color--body);
+    color: #fff;
+    border-radius: 7px;
+    padding: 4rem;
+    display: grid;
+}
+
+.callout .btn {
+    justify-self: center;
+    align-self: center;
+}
+
+.callout__heading, 
+.callout__body{
+    text-align: center;
+}
+
+@media screen and (min-width:768px) {
+    .callout .grid--1x2 {
+        grid-template-columns: 1fr auto;
+    }
+
+    .callout__heading, 
+    .callout__body {
+        text-align: left;
+    }
+    .callout .btn {
+        justify-self: start;
+        margin: 0 2rem;
+        font-size: 1.6rem;
+    }
+}
