@@ -153,6 +153,15 @@ a {
     fill: var(--color--headings);
 }
 
+.icon--white {
+    fill:#fff;
+}
+
+.icon--small {
+    width: 30px;
+    height: 30px;
+}
+
 .icon-container {
     background: bisque;
     border-radius: 50px;
@@ -254,6 +263,7 @@ a {
     box-shadow: 0 0 20px 10px var(--color--border);
     border-radius: 10px;
     overflow: hidden;
+    max-width: 1140px;
 }
 
 .card__header, 
@@ -345,4 +355,40 @@ a {
     .quote__company {
         font-size: 1.6rem;
     }
+}
+
+
+/* grids */
+.grid {
+    display: grid;
+
+}
+
+@media screen and (min-width:768px){
+    .grid--1x2{
+        grid-template-columns: repeat(2, 1fr); } 
+}
+
+@media screen and (min-width:1024px){
+    .grid--1x3{
+        grid-template-columns: repeat(3, 1fr); } 
+}
+
+/* testimonial */
+.testimonial {
+    padding: 2rem;
+}
+
+.testimonial__image > img{
+    width: 100%;
+}
+
+.testimonial__image {
+    position: relative;
+}
+
+.testimonial__image > .icon-container {
+    position: absolute;
+    top:20px;
+    right: -32px;
 }
