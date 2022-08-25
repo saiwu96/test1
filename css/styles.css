@@ -248,3 +248,20 @@ a {
     border: 0;
     flex-grow: 1;
 }
+
+/* cards */
+.card {
+    box-shadow: 0 0 20px 10px var(--color--border);
+    border-radius: 10 px;
+    overflow: hidden;
+}
+
+.card__header, 
+.card__body {
+    padding: 2rem 3rem;
+}
+
+.card--primary .card__header {
+    background: var(--color--primary);
+    color: #fff;
+}
