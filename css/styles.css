@@ -299,3 +299,36 @@ a {
 .media__image {
     margin-top: 1rem;
 }
+
+/* quotes */
+.quote {
+    color: var(--color--headings);
+    font-style: italic;
+    font-size: 3rem;
+}
+
+.quote__text::before {
+    content:open-quote;
+}
+.quote__text::after {
+    content:close-quote;
+}
+
+.quote__author {
+    font-size: 3rem;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 0;
+}
+.quote__line {
+    position: relative;
+    bottom: 10px;
+}
+
+.quote__company {
+    font-size: 2rem;
+    font-style: normal;
+    color: var(--color--border);
+    opacity: .8;
+    margin-top: 0;
+}
