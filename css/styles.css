@@ -274,7 +274,6 @@ a {
     box-shadow: 0 0 20px 10px var(--color--border);
     border-radius: 10px;
     overflow: hidden;
-    max-width: 1140px;
 }
 
 .card__header, 
@@ -507,4 +506,32 @@ a {
 .collapsible--expanded .collapsible__content {
     max-height: 100vh;
     opacity: 1;
+}
+
+/* block */
+.block {
+    --padding-vertical: 6rem;
+    padding: var(--padding-vertical) 2rem;
+}
+.block__header {
+    text-align: center;
+}
+.block__heading {
+    margin-top: 0%;
+}
+.block--dark {
+    background: #000;
+    color: #7b858b;
+}
+.block--dark .block__heading {
+    color: #fff;
+}
+
+.block--skewed-right {
+    padding-bottom: calc(var(--padding-vertical) + 4rem);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+}
+.block--skewed-left {
+    padding-bottom: calc(var(--padding-vertical) + 4rem);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 }
