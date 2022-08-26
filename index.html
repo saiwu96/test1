@@ -15,98 +15,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
-    <div class="input-group container">
-      <input class="input" type="text" placeholder="Enter key words here..." />
-      <button class="btn btn--primary">Search</button>
+    <div class="collapsible collapsible--expanded">
+      <header class="collapsible__header">
+        <h2 class="collapsible__heading">Item1</h2>
+        <svg class="icon icon--white collapsible__chevron">
+          <use xlink:href="images/sprite.svg#chevron"></use>
+        </svg>
+      </header>
+      <p class="collapsible__content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+        perferendis.
+      </p>
     </div>
-    <div class="container plans">
-      <div class="grid grid--1x2 ">
-        <div class="plan">
-          <div class="card card--primary">
-            <header class="card__header">
-              <h3 class="plan__name">Special Beef Dish</h3>
-              <span class="plan__price">$88</span>
-              <span class="badge badge--secondary badge--small">30% off today</span>
-              <span class="plan__description"
-                >You definitely should try it!</span
-              >
-            </header>
-            <div class="card__body">
-              <ul class="list list--tick">
-                <li class="list__item">items 1</li>
-                <li class="list__item">items 2</li>
-                <li class="list__item">items 3</li>
-                <li class="list__item">items 4</li>
-              </ul>
-              <button class="btn btn--primary btn--block">Order Now</button>
-            </div>
-          </div>
-        </div>
-        <div class="plan">
-          <div class="card card--primary">
-            <header class="card__header">
-              <h3 class="plan__name">Lamb</h3>
-              <span class="plan__price">$99</span>
-              <span class="badge badge--secondary badge--small">20% off today</span>
-              <span class="plan__description"
-                >Chef's recommendation!</span
-              >
-            </header>
-            <div class="card__body">
-              <ul class="list list--tick">
-                <li class="list__item">items 1</li>
-                <li class="list__item">items 2</li>
-                <li class="list__item">items 3</li>
-                <li class="list__item">items 4</li>
-              </ul>
-              <button class="btn btn--primary btn--block">Order Now</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card testimonial container">
-      <div class="grid grid--1x2">
-          <div class="testimonial__image">
-            <img src="/images/model1.jpg" alt="" />
-            <span class="icon-container">
-              <svg class="icon icon--white icon--small">
-                <use xlink:href="images/sprite.svg#quotes"></use>
-              </svg>
-            </span>
-          </div>
-          <blockquote class="quote">
-            <p class="quote__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestiae molestias animi aperiam vel commodi rerum distinctio accusantium repudiandae minus deserunt maiores, expedita odio harum! Quia est praesentium accusamus reiciendis.</p>
-            <footer>
-              <div class="media">
-                <div class="media__image">
-                  <svg class="icon quote__line">
-                    <use xlink:href="images/sprite.svg#line"></use>
-                  </svg>
-                </div>
-                <div class="media__body">
-                  <h3 class="media__title quote__author">John Smith</h3>
-                  <p class="quote__company">ABC company</p>
-                </div>
-              </div>
-            </footer>
-          </blockquote>
-        </div>
-      </div>
-    </div>
-    <div class="callout container">
-      <div class="grid grid--1x2">
-        <div class="callout__content">
-          <h3 class="callout__heading">Are you ready?</h3>
-          <p class="callout__body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis natus
-            tenetur autem at praesentium expedita cupiditate laudantium non
-            quaerat temporibus.
-          </p>
-        </div>
-        <a href="#" class="btn btn--primary">BOok now</a>
-      </div>
-    </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
